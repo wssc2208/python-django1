@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>operation successful</title>
+</head>
+<body>
+<h1>
+恭喜 {{username}}! <br>
+ {{operation}} 成功
+<br>
+<p>3秒钟后转入如下链接，如果长时间没有响应请直接点击：</p>
+<p><a href="{{ refresh_url }}">{{ refresh_url }}</a></p>
+<meta http-equiv="refresh" content="3;url={{ refresh_url }}">
+</h1>
+</body>
+</html>
